@@ -8,8 +8,7 @@ int main (){
 		printf ("Ed");
 	}if(grade%5 ==0){
 		printf ("Pogi");
-	}if (grade%3&&5==0 ){
-		printf("Ed Pogi");
+	}else{
+		printf ("Not Divisible");
 	}
-	
 }
