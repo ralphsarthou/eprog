@@ -8,7 +8,7 @@ int main (){
 		printf ("Ed");
 	}if(grade%5 ==0){
 		printf ("Pogi");
-	}if ((grade%3 ==0 ) && ( grade%5 ==0)){
+	}if (grade%3&&5==0 ){
 		printf("Ed Pogi");
 	}
 	
