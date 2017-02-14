@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 main(){
-    FILE *fp;;
-	char a[26], ch;
-	int numberArray[26];
+    FILE *fp;
+	char ch;
 	fp=fopen("input.txt","r");
 	while(!feof(fp)){
 		ch=getc(fp);
