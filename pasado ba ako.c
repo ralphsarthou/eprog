@@ -60,10 +60,10 @@ void displayPassed(){
 	}
 	char temp[128];
 	while (fgets(temp, sizeof temp, myFile) != NULL) {
-			sscanf(temp, "%s %s %f", &stud.name, &stud.info.course, &stud.info.grade);
-			if((stud.info.grade>=75)&&(stud.info.grade<=100)){
-				printf("%s %s %f\n", stud.name, stud.info.course, stud.info.grade);
-			}
+		sscanf(temp, "%s %s %f", &stud.name, &stud.info.course, &stud.info.grade);
+		if((stud.info.grade>=75)&&(stud.info.grade<=100)){
+			printf("%s %s %f\n", stud.name, stud.info.course, stud.info.grade);
+		}
 	}
 	fclose(myFile);
 }
@@ -78,10 +78,10 @@ void displayFailed(){
 	}
 	char temp[128];
 	while (fgets(temp, sizeof temp, myFile) != NULL) {
-			sscanf(temp, "%s %s %f", &stud.name, &stud.info.course, &stud.info.grade);
-			if((stud.info.grade>0)&&(stud.info.grade<75)){
-				printf("%s %s %f\n", stud.name, stud.info.course, stud.info.grade);
-			}
+		sscanf(temp, "%s %s %f", &stud.name, &stud.info.course, &stud.info.grade);
+		if((stud.info.grade>0)&&(stud.info.grade<75)){
+			printf("%s %s %f\n", stud.name, stud.info.course, stud.info.grade);
+		}
 	}
 	fclose(myFile);
 }
@@ -96,10 +96,10 @@ void displayInvalid(){
 	}
 	char temp[128];
 	while (fgets(temp, sizeof temp, myFile) != NULL) {
-			sscanf(temp, "%s %s %f", &stud.name, &stud.info.course, &stud.info.grade);
-			if((stud.info.grade<0)||(stud.info.grade>100)){
-				printf("%s %s %f\n", stud.name, stud.info.course, stud.info.grade);
-			}
+		sscanf(temp, "%s %s %f", &stud.name, &stud.info.course, &stud.info.grade);
+		if((stud.info.grade<0)||(stud.info.grade>100)){
+			printf("%s %s %f\n", stud.name, stud.info.course, stud.info.grade);
+		}
 	}
 	fclose(myFile);
 }
